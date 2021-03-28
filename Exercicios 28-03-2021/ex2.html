@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+ <head>
+    <title>Ex2</title>
+ </head>
+ <body onload="main()">
+ </body>
+</html>
+
+<script>
+function main()
+{
+ var alunos =  parseInt(prompt("Insira a quntidade de numeros: "));
+ var vetor = new Array(alunos);
+
+ for(let count=0; count<alunos; count++)
+  vetor[count] = parseInt( prompt("Numero" + (count+1) + ":") )
+ 
+ var soma=0;
+ for(let count in vetor)
+  soma += vetor[count];
+
+ var media = soma/alunos;
+ document.write("Média dos numeros: " + media);
+}
+</script>

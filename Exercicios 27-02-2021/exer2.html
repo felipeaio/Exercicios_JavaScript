@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas</title>
+</head>
+
+<body>
+    Nome veículo <input type="text" id="nome"><br>
+    Valor do veiculo <input type="text" id="valor"><br>
+    <input type="button" value="fazer a operacao" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            let nomeCarro = document.getElementById('nome').value;
+            let valor = Number(document.getElementById('valor').value);
+
+
+            document.open();
+            document.write("Promoção: " + nomeCarro + "<br>");
+            document.getElementById('resultado').innerHTML = 'Entrada de: ' + (valor * 0.5) + '+ 12x de R$' + Math.trunc(valor / 12);
+            document.close();
+        }
+    </script>
+</body>
+
+</html>

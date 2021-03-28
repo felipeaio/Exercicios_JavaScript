@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas</title>
+</head>
+
+<body>
+    Nome do medicamento: <input type="text" id="nome"><br>
+    Preço: <input type="text" id="preco"><br>
+
+    <input type="button" value="Mostrar promoção" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+
+function FuncaoNegrito() 
+{
+    var texto= "Olá Mundo!";
+    var resultado = texto.bold();
+}
+
+        function calcular() {
+            let nomeRemedio = document.getElementById('nome').value;
+            let precoRemedio = Number(document.getElementById('preco').value);
+
+
+            document.getElementById('resultado').innerHTML = 'Leve dois por apenas ' + precoRemedio + ' tem '
+        }
+    </script>
+</body>
+
+</html>
